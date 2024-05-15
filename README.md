@@ -3,8 +3,11 @@
 NEURAL NETWORK MODEL 
 
 OVERVIEW
+
 The main purpose of this analysis is to create a tool for a nonprofit organization Alphabet Soup. The binary classifier aims to predict whether the applicant will be successful in their ventures if funded by Alphabet Soup. 
+
 PROCESS
+
 Alphabet Soup’s business team provided a CSV that contains 34,000 organizations that received funding from Alphabet Soup over the years. The columns in the CSV are:
 EIN and NAME—Identification columns
 APPLICATION_TYPE—Alphabet Soup application type
@@ -19,6 +22,7 @@ ASK_AMT—Funding amount requested.
 IS_SUCCESSFUL—Was the money used effectively.
 
 Data Preprocessing
+
 •	Used Pandas and scikit-learn’s “StandardScaler()” to preprocess the data.
 •	Identified the target and feature variables. 
 •	IS_SUCCESSFUL is the target variable y. The remaining columns are features variables X.
@@ -28,13 +32,16 @@ Data Preprocessing
 •	Scaled the training and testing features datasets by creating a StandardScaler instance, fitting it to the training data, then using the transform function.
 
 COMPILE, TRAIN, AND EVALUATION OF THE MODEL
+
 The main goal of the model is to achieve 75% accuracy. 
 Used 3 to 4 hidden layers in different attempts.
 Attempted both ‘relu’ and ‘tanh’ activation function to check on the accuracy of the model. 
 Tried different combinations of neuron units to achieve 75% accuracy of the model. 
 Added/ reduced number of epochs.
 The final analysis folder has Alphabetsoup starter file, AlphabetSoupCharity_Optimization1.ipynb and AlphabetSoupCharity_Optimization_2.ipynb. 
+
 SUMMARY:
+
 On many attempts of running the model with ‘relu’ and ‘tanh’ activation function with minimum of 3 hidden layers and trying different combinations of neurons the model did not achieve 75% of accuracy. 
 
 In AlphabetSoupCharity_Optimization1.ipynb file the model achieved 72% of accuracy and 55% of loss. 
